@@ -11,9 +11,9 @@ unsigned long counter = 0;
 
 //Get your UUID from Online UUID Generator.
 //https://www.uuidgenerator.net/version4
-#define SERVICE_UUID        "6E400001-B5A3-F393-E0A9-E50E24DCCA9E"
-#define CHARACTERISTIC_UUID "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"
-#define DEVICE_NAME         "ESP32_BLE_CNTLR"
+#define SERVICE_UUID        "1812"
+#define CHARACTERISTIC_UUID "2A4D"
+#define DEVICE_NAME         "VR BOX"
 #define LED      2
 
 static BLEUUID  serviceUUID(SERVICE_UUID);
@@ -35,7 +35,7 @@ std::string old_value = "N/A" ;
 bool connectToServer(BLEAddress pAddress) {
   Serial.print("Forming a connection to ");
   Serial.println(pAddress.toString().c_str());
-  //BLEClient*  pClient  = BLEDevice::createClient();
+
   pClient->connect(pAddress);
   BLERemoteService* pRemoteService = pClient->getService(serviceUUID);
   Serial.print(" - Connected to server :");
