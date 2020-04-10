@@ -1,2 +1,2 @@
-# esp32_ble_remote_control
+# All IOT communication samples
 Demo remote control done by ESP32 BLE
