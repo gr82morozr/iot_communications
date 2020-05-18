@@ -1,2 +1,5 @@
-# All IOT communication samples
-Demo remote control done by ESP32 BLE
+# ESP32 Remote Control Demos
+- TCP
+- ESPNOW
+- BLE
+
